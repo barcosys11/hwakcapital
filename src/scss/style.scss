@@ -1,0 +1,31 @@
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+@import "layout";
+@import "example";
+
+// If you want to add custom CSS you can put it here
+@import "custom";
+
+.otp-input {
+    width: 3rem !important;
+}
+.loader-spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+  }
